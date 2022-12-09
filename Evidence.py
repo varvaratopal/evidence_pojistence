@@ -54,7 +54,6 @@ class Evidence:
             else:
                 print("Neplatné telefonní číslo")
                 continue
-        self.Pojistenec.append(Pojistenec(jmeno, prijmeni, vek, tel_cislo))
         print("Nový pojištěnec přidán.")
         input("Pokračujte libovolnou klávesou...\n")
 
