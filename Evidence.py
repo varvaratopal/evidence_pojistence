@@ -46,14 +46,14 @@ class Evidence:
 
         tel_cislo = None
         while True:
-            tel_cislo = input("Zadej telefonní č"
-                           "íslo:\n")
+            tel_cislo = input("Zadej telefonní číslo:\n")
             # Telefonní číslo musí být 9 znaků dlouhé číslo
             if tel_cislo.isnumeric() and len(tel_cislo) == 9:
                 break
             else:
                 print("Neplatné telefonní číslo")
                 continue
+        self.Pojistenec.append(Pojistenec(jmeno, prijmeni, vek, tel_cislo))
         print("Nový pojištěnec přidán.")
         input("Pokračujte libovolnou klávesou...\n")
 
