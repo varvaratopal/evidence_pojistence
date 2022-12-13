@@ -63,9 +63,9 @@ class Evidence:
         input("Pokračujte libovolnou klávesou...\n")
 
     def vyhledat(self):
-        vyhledani = input("Zadejte jméno pojisteného:\n")
-        vyhledani = input("Zadej příjmení:\n")
+        vyhledani_jmeno = input("Zadejte jméno pojisteného:\n")
+        vyhledani_prijmeni = input("Zadej příjmení:\n")
         for Pojistence in self.Pojistenec:
-            if Pojistence.jmeno == vyhledani or Pojistence.prijmeni == vyhledani:
+            if Pojistence.jmeno == vyhledani_jmeno and Pojistence.prijmeni == vyhledani_prijmeni:
                 print(Pojistence)
         input("Pokračujte libovolnou klávesou...\n")
